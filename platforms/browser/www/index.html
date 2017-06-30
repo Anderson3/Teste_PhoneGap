@@ -1,0 +1,117 @@
+<DOCTYPE html>
+
+<html lang="pt-BR">
+	<head>
+		<meta charset="utf-8">
+        <meta name="viewport" content="initial-scale=1, maximum-scale=1, user-scalable=no, width=device-width">
+        <title>Small Game Test</title>
+
+		<style type="text/css">
+			*{	
+				margin:0;
+				padding:0;
+				box-sizing: border-box;
+			}
+			body{
+				background: #0079c2;
+			}
+			button{
+				margin: 5px 0 5px 22%;
+				padding: 3%;
+			}
+			#pontuacao{
+				width: 50%;
+				padding: 3%;
+				background: white;
+				position: absolute;
+				top: 3%;
+				left: 3%;
+			}
+			#vidas{
+				width: 35%;
+				padding: 3%;
+				background: white;
+				position: absolute;
+				top: 3%;
+				right: 3%;
+			}
+
+			.pontas{
+				margin: 5px 0 5px 42%;
+			}
+
+			#face{
+				margin: 65px auto 10px;
+				border: 1px solid blue;
+				height: 250px;
+				width: 250px;
+				background: url("img/face-normal.png");
+			}
+			.joystick{
+				margin: 0 auto;
+				border: 1px solid red;
+				width: 70%;
+				background: white;
+			}
+			.btn-1{
+				background: url("img/triangulo.png");
+			}
+		</style>
+
+		<script type="text/javascript">
+			function entrada(numero){
+				numGerado = gerarNumero();
+
+				if(numero == numGerado){
+					//alert("Parabéns!\nAcertou Mizaravi");
+					mudarFace('acerto');
+				}else{
+					console.log(numGerado);
+					mudarFace('erro');
+				}
+			}
+
+			function gerarNumero(){
+				n = Math.floor(Math.random()*4) + 1;
+				return(n);
+			}
+
+			function mudarFace(opcao){
+				if(opcao == 'acerto'){
+					document.getElementById("face").style.background = "url('img/face-positiva.png') center";
+				}else{
+					document.getElementById("face").style.background = "url('img/face-negativa.png')";
+				}
+				window.setTimeout(reiniciarFace, 3*1000);
+			}
+
+			function reiniciarFace(){
+				document.getElementById("face").style.background = "url('img/face-normal.png')"
+			}
+		</script>
+	</head>
+
+	<body>
+		<script type="text/javascript" src="cordova.js"></script>
+
+		<div id="pontuacao">PONTUAÇÃO: </div>
+		<div id="vidas">VIDAS: </div>
+
+		<div id="face"></div>
+
+		<div class="joystick">
+			<div>
+				<button type="buttom" class="pontas" class="btn-1" onClick="entrada(1)">btn-1</button>
+			</div>
+			<div>
+				<button type="buttom" class="btn-2" onClick="entrada(2)">btn-2</button>
+				<button type="buttom" class="btn-3" onClick="entrada(3)">btn-3</button>
+			</div>
+			<div>
+				<button type="buttom" class="pontas" class="btn-4" onClick="entrada(4)">btn-4</button>
+			</div>
+
+		</div>
+
+	</body>
+</html>

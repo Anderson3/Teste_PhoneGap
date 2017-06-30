@@ -1,0 +1,67 @@
+/*CSS*/
+
+/*RESET DAS CONFIGURAÇÕES DA PÁGINA*/
+*{margin:0; padding:0; box-sizing: border-box; outline: none;}
+
+/*ESPECIFICAÇÕES E DEFINIÇÕES DE ALGUNS ELEMENTOS*/
+body{margin:0; padding:0; box-sizing: border-box; outline: none;box-sizing: border-box; outline: none;}
+ul{list-style: none;}
+p{text-align: justify; text-indent: 5%;}
+h1{text-align: left;}
+h3{border: 1px solid white; background: ; box-shadow: 1% 2% gray;}
+
+/*DEFINIÇÃO DE FONTES; alinhasdas com css/font/minhasFontes.ttf */
+@font-face {
+  font-family: 'Trebuschet MS';
+}
+
+@font-face {
+  font-family: 'JosefinSans-Regular', sans-serif;
+  src: url('css/font/JosefinSans-Regular.ttf') format('truetype');
+}
+
+/*BOTÃO MENU (BARRA) LATERAL SUPERIOR DIREITA*/
+#btn-menu{width: 55px; height: 55px; right: 0px; top: 10px; position: fixed; cursor: pointer;}
+
+/*ESTILIZAÇÃO DO CABEÇALJO, LOGOMARCA E DIVS COMPLEMENTARES*/
+#topo{margin: 0; padding:0%; width: 100%;}
+.cabecalho{width: 100%; padding: 0%; background: #007ACC; box-sizing: border-box; box-shadow: 0 10px #004C7F;}
+.logo{position: left;}
+
+/*ESTILIZAÇÃO NAVEGADOR LATERAL*/
+nav{display: none; position: right; position: fixed; right: 0px; top: 65px;}
+.navegador{width: 80%; background: #007ACC;}
+.navegador ul{padding: 0;text-align: center; background: transparent; border-bottom: 2px solid gray;}
+.navegador a{padding: 6% 7%; text-decoration: none; font-weight: bold;border:  0; display: block; color: white;}
+.navegador a:hover{background: #0098FF; transition: all 1.5s;}
+
+.titulo-principal{margin-top: 3%; padding: 10%; background: url("../img/titulo.png") no-repeat ;}
+
+/*BOTÕES DE EXPANDIR E CONTRAIR INFORMAÇÕES NA PÁGINA INICIAL*/
+.btn{margin: 0 35%;}
+
+.bloco1{margin: 15px 3%; padding: 3%; background: url('../img/fundo-bloco1.jpg'); border-radius: 5%;}
+
+.bloco2{margin: 15px 3%; padding: 3%; background: url('../img/fundo-bloco1.jpg'); border-radius: 5%;}
+
+.bloco3{margin: 15px 3%; padding: 3%; background: url('../img/fundo-bloco1.jpg'); border-radius: 5%;}
+
+.bloco4{margin: 15px 3%; padding: 3%; background: url('../img/fundo-bloco1.jpg'); border-radius: 5%;}
+
+/*ESTILIZAÇÃO DO RODAPÉ*/
+#rodape{width: 100%; padding: 5%; background: #007ACC; box-sizing: border-box; outline: none;}
+.base{width: 100%; position: relative; bottom: 0px; padding: 2%; background: #004C7F; box-sizing: border-box; outline: none;}
+
+
+
+
+
+
+
+.btn-posicao{margin: 0px auto; padding: 0% 15%; width: 40%;}
+.btn_posicao img{}
+.continuacao{display: none;}
+
+.mais{}
+
+.menos{display: none;}

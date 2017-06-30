@@ -1,0 +1,116 @@
+<DOCTYPE html>
+
+<html lang="pt-br">
+	<head>
+		<meta http-equiv="refresh" content="15"/>
+
+		<meta charset="utf-8"/>
+		<meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+		<title>Projeto PhoneGap</title>
+		<link rel="icon" href="img/favicon.ico">
+		<link rel="stylesheet" href="css/estilo.css">
+		<link href="css/font/JosefinSans-Regular.ttf">
+		<script type="text/javascript" src="js/jquery.mobile-1.4.5.js"></script>
+		<script type="text/javascript" src="js/jquery.js"></script>
+	</head>
+
+	<body>
+		<div id="btn-menu"><img src="img/btn-menu.png" width="50px"/></div>
+
+		<script>
+			$("#btn-menu").click(function(){
+    		$(".navegador").toggle('slow');
+			});
+		</script>
+
+		<header id="topo">
+			<section class="cabecalho">
+				<h1 class="logo"><img src="img/topo.png" width="85%"></img></h1>
+			</section>
+
+			<nav class="navegador">
+				<ul><a href="index.html"><li>INÍCIO</li></a></ul>
+				<ul><a href="definicao.html"><li>DEFINIÇÃO DE PATOLOGIAS</li></a></ul>
+				<ul><a href="tipos.html"><li>TIPOS DE PATOLOGIA</li></a></ul>
+				<ul><a href="testes.html"><li>TESTES DE PATOLOGIA</li></a></ul>
+				<ul><a href="solucoes.html"><li>SOLUÇÕES APLICÁVEIS</li></a></ul>
+				<ul><a href="estudos.html"><li>ESTUDOS RELACIONADOS</li></a></ul>
+				<ul><a href="sobre.html"><li>SOBRE</li></a></ul>
+				<ul><a href="#"><li>SAIR</li></a></ul>
+			</nav>
+		</header>
+
+		<main id="corpo">
+			
+			<section>
+
+				<h1>Patologia</h1>
+				<p>
+					Assim como a ciência médica se refere às anormalidades e disturbios vinculados à saúde humana com "Patologias". Dentro da construção civil acontecem, de modo semelhante, determinadas situações que acarretam a depredação e diminuem drasticamente a vida útil de edificações, reconhecidas neste âmbito como Patologia da Construção.
+				</p>
+				<p>
+					Patologia: É a ciência que estuda a origem, os sintomas e a natureza das doenças. No caso do concreto, a patologia significa o estudo das anomalias relacionadas à deterioração do concreto na estrutura.
+				</p>
+				<p>
+					As causas mais comuns pelas quais as patologias tendem a aparecer dentro da construção civil estão em maior parte associadas ao projeto de execução, prosseguindo com falhas de projeto entre as demais. Segundo Carmona, temos como tais referências:
+				</p>
+				<br/>
+				<img src="img/grafico-patologia.png" width="100%"/>
+				<br/>
+				<p>
+					Quando se tratam das causa de Patologias, tem-se que a maior parte tem seus surgimentos através de entes que ás vezes são ocasionados por agente naturais e vezes por interferência direta do homem. Podendo destacar entre algumas dessas causas:
+				</p>
+				<ul>
+					<li>Cargas</li>
+					<li>Variação de Umidade</li>
+					<li>Variações de Temperatura</li>
+					<li>Agentes Biológicos, Físicos e Químicos</li>
+					<li>Imcompatibilidade de Materiais</li>
+					<li>Agentes Atmosféricos</li>
+					<li>etc</li>
+				</ul>
+				<p>
+					Para realizar os devidos cuidados contra esse problema nas construções é necessário primeiro realizar um diagnóstico observando quais os sintomas (ocorrências) estão afetando as estruturas através de testes apropriados. E, posteriormente, realizar o solucionamento de acordo com os dados obtidos dos mesmos.
+				</p>
+
+				<p>
+					<h4 class="termos">Termos Envolvidos</h4>
+					<div class="info-termos">
+					<ul>
+						<li>Terapia: É a ciência que estuda a escolha e administração dos meios de curar as doenças e da natureza dos remédios. (Therapeia = método de curar, tratar.)</li>
+						<li>Profilaxia: É a ciência que estuda as medidas necessárias à prevenção das enfermidades. Prophylaxis = prevenção</li>
+						<li>Sintoma: É a manifestação patológica detectável por uma série de métodos e análises.</li>
+						<li>Falha: É um descuido ou erro, uma atividade imprevista ou acidental que se traduz em um defeito ou dano.</li>
+						<li>Origem: É a etapa do processo construtivo (planejamento/concepção, projeto, fabricação de materiais etc) em que ocorreu o problema.</li>
+						<li>Diagnóstico: É o entendimento do problema (sintoma, mecanismo, causa e origem).</li>
+						<li>Correção: É a metodologia para a eliminação dos defeitos causados pelos problemas patológicos.</li>
+						<li>Recuperação: É a correção dos problemas patológicos.</li>
+						<li>Reforço: Aumento da capacidade de resistência de um elemento, estrutura ou fundação em relação ao projeto original, devido à alteração de utilização, degradação ou falha que reduziram ou não atendem a sua capacidade resistente inicial.</li>
+						<li>Reconstrução: É o refazimento de um elemento, estrutura ou fundação em razão de, mesmo que este recebesse uma ação corretiva, não atenderia mais a um desempenho mínimo aceitável ou, de um custo dado que a intervenção corretiva seja maior que o custo de sua reconstrução.</li>
+						<li>Classificação dos reparos: Está associado à escolha dos materiais e definição dos métodos de reparo, isto é, da terapia, que pode ser classificado em:
+							<ul>
+								<ol>Reparos rasos, localizados ou generalizados, de 5 mm a 30 mm de profundidade;</ol>
+								<ol>Reparos semiprofundos, de 31 mm a 60 mm de profundidade;</ol>
+								<ol>Reparos profundos, de 61 mm a 300 mm de profundidade; tratamento de fissuras.</ol>
+							</ul>
+						</li>
+
+					</ul>
+
+					<script>
+						$(".info-termos").hide()
+						$(".termos").click(function(){
+			    		$(".info-termos").toggle('slow');
+						});
+					</script>
+
+				</p>
+			</section>
+
+			<footer id="rodape"></footer>
+			<div class="base"></div>
+
+		</main>
+	</body>
+
+</html>
